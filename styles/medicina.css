@@ -1,0 +1,105 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e0e0e0;
+    color: #3c4246;
+    font-size: 18px;
+    
+    /* display: flex; */
+}
+
+.galeria-medicina {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha se não couberem */
+    justify-content: center; /* Centraliza a galeria */
+    align-items: flex-start; /* Alinha os itens pelo topo */
+    gap: 10px; /* Espaço entre as colunas */
+}
+
+.imagem-grande {
+    /* Define que esta coluna ocupará cerca de 60% do espaço */
+    flex: 3;
+    max-width: 60%; 
+    justify-content: center;
+
+}
+
+.imagens-pequenas {
+    /* Define que esta coluna ocupará cerca de 40% do espaço */
+    flex: 2;
+    max-width: 25%;
+    
+    /* Usa flexbox para as imagens pequenas ficarem uma embaixo da outra */
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Espaço entre as imagens pequenas */
+}
+
+.galeria-medicina img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+
+header {
+    background-color: #0e0a42;
+}
+
+section {
+    background-color: rgb(55, 72, 126);
+    color:rgb(182, 191, 209);
+    height: 60;
+    padding: 30px; /* aumenta espaço interno */
+}
+
+h1 {
+    color: rgb(255, 248, 248);
+    background-color: #211f46;
+    border-radius: 2px; 
+}
+  
+h2{
+    border-radius: 2px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(7, 14, 82);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+  
+a{
+    padding: 10px;
+    background-color: rgb(7, 14, 82);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #a462fa; /* Borda rosa, chamativa! */
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+

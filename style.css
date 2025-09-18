@@ -1,0 +1,70 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #dae0e4;
+  color: #fff;
+  /* display: flex; */
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap; /* <- permite quebra de linha */
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px; /* opcional: espaço entre itens */
+}
+
+.item-galeria {
+  width: 30%; /* Define a largura de cada item */
+  text-align: center;
+  height: 30%; /* define a altura */
+}
+
+.item-galeria {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  padding: 10px;
+  background-color: rgb(175, 187, 202); /* opcional, só pra visualizar melhor */
+  color: rgb(2, 31, 48);
+}
+
+
+header {
+  background-color: #0e0a42;
+}
+
+section {
+  background-color: rgb(55, 72, 126);
+  height: 50px; /* altura */
+  padding: 30px; /* aumenta espaço interno */
+}
+
+h1 {
+  color: rgb(255, 248, 248);
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(7, 14, 82);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+a{
+  padding: 10px;
+  background-color: rgb(7, 14, 82);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
