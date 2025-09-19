@@ -11,7 +11,7 @@ body {
     background-color: #e0e0e0;
     color: #3c4246;
     font-size: 18px;
-    
+    padding-bottom: 20px;
     /* display: flex; */
 }
 
@@ -74,13 +74,7 @@ h2{
     border-radius: 2px;
 }
 
-button {
-    padding: 10px;
-    background-color: rgb(7, 14, 82);
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
+
   
 a{
     padding: 10px;
@@ -88,6 +82,18 @@ a{
     color: white;
     border: none;
     border-radius: 5px;
+
+    text-decoration: none; 
+    margin-bottom: 10px;
+}
+
+a:hover {
+      background-color: rgb(66, 179, 255);
+    }
+   
+a:active {
+ background-color:  rgb(66, 179, 255);
+  transform: scale(0.95);
 }
 
 article {
@@ -101,3 +107,54 @@ article {
 }
 
 
+.container-piramide {
+    display: flex;
+    flex-direction: column; /* Empilha os blocos verticalmente */
+    align-items: center;    /* Centraliza horizontalmente */
+    gap: 20px;              /* Espaço entre o bloco central e os de baixo */
+    margin: 20px auto;
+}
+
+.blocos-baixo {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 20px;               /* espaço entre os dois blocos */
+    flex-wrap: wrap;         /* permite quebrar linha em telas pequenas */
+}
+
+.blocos-baixo article {
+    max-width: 400px;       /* cada bloco ocupa no máximo 400px */
+    width: 100%;            /* ocupa 100% do espaço disponível no bloco, não da linha inteira */
+    box-sizing: border-box;
+}
+
+.container-piramide article {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border: 2px solid #a462fa;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;       /* Valor padrão para os blocos de baixo */
+}
+
+.bloco-central {
+    max-width: 800px !important; /* força o tamanho maior */
+    width: 100%;
+    text-align: left; /* texto ocupa toda a largura */
+}
+/* Texto ocupa toda a largura do bloco */
+.bloco-central p,
+.bloco-central ul {
+    width: 100%;
+}
+
+.espaço{
+    margin-bottom: 20px;
+}
+.borda {
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}

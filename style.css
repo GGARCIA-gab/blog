@@ -21,7 +21,7 @@ body {
   gap: 20px; /* opcional: espaço entre itens */
 
 
-;
+
 }
 
 .item-galeria {
@@ -87,9 +87,9 @@ a:hover {
     }
    
 a:active {
-      background-color:  rgb(66, 179, 255);
-      transform: scale(0.95);
-    }
+ background-color:  rgb(66, 179, 255);
+  transform: scale(0.95);
+}
 
 
 img {
