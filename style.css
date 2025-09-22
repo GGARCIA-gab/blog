@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CORPO DO SITE */
+body {
+  font-family: Arial, sans-serif; /* Fonte simples */
+  text-align: center;             /* Centraliza textos */
+  background-color: #dae0e4;      /* Cor de fundo (cinza claro/azulado) */
+  color: #fff;                    /* Cor padrão do texto */
+}
+
+/* Logo */
+.logo-container img {
+  height: 100px; /* altura fixa */
+  width: 220px;  /* mantém proporção */
+  border-radius: 2px; /* bordas arredondadas */
+  margin-left: 5px;
+  
+}
+
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;       /* Quebra linha se não couber */
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;             /* Espaço entre os itens */
+}
+
+/* Cada item da galeria */
+.item-galeria {
+  width: 30%; /* 3 itens por linha */
+  height: 30%;
+  display: flex;
+  flex-direction: column;   /* Conteúdo em coluna */
+  padding: 10px;
+  background-color: rgb(183, 204, 230); /* Azul claro */
+  color: rgb(2, 31, 48);                /* Texto azul escuro */
+  border-radius: 10px;                  /* Cantos arredondados */
+  box-shadow: 5px 5px 15px rgba(124, 124, 124, 0.5); /* Sombra */
+  margin-left: 15px;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(20, 42, 90);
+}
+
+section {
+  background-color: rgb(55, 72, 126);
+  height: 50px;
+  padding: 30px; /* mais espaço interno */
+}
+
+h1 {
+  color: rgb(255, 248, 248); /* branco */
+}
+
+button, a {
+  padding: 10px;
+  background-color: rgb(7, 14, 82); /* azul escuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* tira o sublinhado dos links */
+  cursor: pointer;
+}
+
+/* EFEITOS NOS LINKS */
+a:hover {
+  background-color: rgb(66, 179, 255); /* azul claro ao passar o mouse */
+}
+a:active {
+  background-color: rgb(66, 179, 255);
+  transform: scale(0.95); /* efeito de clique (encolhe) */
+}
+
+img {
+  border-radius: 10px; /* bordas arredondadas */
+}
